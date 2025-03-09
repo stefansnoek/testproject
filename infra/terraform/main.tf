@@ -25,7 +25,7 @@ resource "azurerm_app_service" "webapp" {
     }
 
     logs {
-        detailed_error_messages = true
+        detailed_error_messages_enabled = true
         application_logs{
             file_system_level = "Verbose"
         }    
