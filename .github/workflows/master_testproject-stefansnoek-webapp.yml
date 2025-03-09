@@ -69,4 +69,3 @@ jobs:
           app-name: 'testproject-stefansnoek-webapp'
           slot-name: 'Production'
           package: .
-          

@@ -21,6 +21,14 @@ resource "azurerm_app_service" "webapp" {
     app_service_plan_id = azurerm_service_plan.asp.id
 
     site_config {
-        linux_fx_version = "NODE|14-lts"
+        linux_fx_version = "NODE|18-lts"
+    }
+
+    logs {
+        detailed_error_messages_enabled = true
+        failed_request_tracing = true
+        application_logs{
+            file_system_level = "Verbose"
+        }    
     }
 }
