@@ -1,8 +1,3 @@
-provider "azurerm"{
-    features{}
-    subscription_id = "3087dfe8-7fda-4ff3-adcf-86ab5103796b"
-}
-
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
     name     = "testproject-rg"
@@ -14,13 +9,8 @@ resource "azurerm_service_plan" "asp" {
     name                = "testproject-asp"
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
-    kind                = "Linux"
-    reserved            = true
-
-    sku {
-        tier = "Basic"
-        size = "B1"
-    }
+    os_type             = "Linux"
+    sku_name            = "B1"
 }
 
 #Web App
