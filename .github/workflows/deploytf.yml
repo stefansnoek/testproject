@@ -28,6 +28,9 @@ jobs:
                 tenant-id: ${{ secrets.ARM_TENANT_ID }}
                 subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
 
+            - name: Change to Terraform Directory
+              run: cd infra/terraform
+
             - name: Terraform Init
               run: terraform init
 
