@@ -68,5 +68,5 @@ jobs:
         with:
           app-name: 'testproject-stefansnoek-webapp'
           slot-name: 'Production'
-          package: ./frontend
+          package: .
           
