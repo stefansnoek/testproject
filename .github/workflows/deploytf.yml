@@ -3,6 +3,9 @@ name: Create web app
 on:
     workflow_dispatch:
 
+permissions:
+  id-token: write 
+
 jobs:
     terraform:
         runs-on: ubuntu-latest
