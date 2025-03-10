@@ -47,7 +47,7 @@ function OrderForm() {
             onChange={(e) => setAmount(e.target.value)} 
           />
         </div>
-        <button type="submit">Place Order</button>
+        <button type="submit">Placing Order</button>
       </form>
 
       {message && <p>{message}</p>}
