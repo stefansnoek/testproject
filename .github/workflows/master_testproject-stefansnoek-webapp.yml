@@ -15,8 +15,10 @@ jobs:
       id-token: write # Dit is vereist voor het aanvragen van de JWT voor Azure
 
     steps:
-      - name: Checkout code
+      - name: Checkout frontend branch
         uses: actions/checkout@v4
+        with:
+          ref: frontend
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
