@@ -40,7 +40,7 @@ function OrderForm() {
           />
         </div>
         <div>
-          <label>Amount:</label>
+          <label>Amount: How much</label>
           <input 
             type="text" 
             value={amount} 
