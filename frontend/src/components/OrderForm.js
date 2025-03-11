@@ -40,14 +40,14 @@ function OrderForm() {
           />
         </div>
         <div>
-          <label>Amount:</label>
+          <label>Amount: How much</label>
           <input 
             type="text" 
             value={amount} 
             onChange={(e) => setAmount(e.target.value)} 
           />
         </div>
-        <button type="submit">Place Order</button>
+        <button type="submit">Placing Order</button>
       </form>
 
       {message && <p>{message}</p>}
