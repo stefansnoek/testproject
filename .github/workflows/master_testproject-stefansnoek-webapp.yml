@@ -2,9 +2,9 @@ name: Build and deploy Docker container to Azure Web App - testproject-stefansno
 
 on:
   # Trigger the workflow manually
-  push:
-    branches:
-      - frontend
+  # push:
+  #   branches:
+  #     - frontend
   workflow_dispatch:
 
 jobs:
